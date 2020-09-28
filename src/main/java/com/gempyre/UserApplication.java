@@ -20,7 +20,7 @@ public class UserApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "Hello World!";
+		return "GemPyre User Service";
 	}
 
 	public static void main(String[] args) {
