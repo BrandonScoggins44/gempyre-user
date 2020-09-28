@@ -30,8 +30,8 @@ public class UserApplication {
 	@Bean
 	CommandLineRunner init(UserRepository userRepository) {
 		return args -> {
-			Stream.of("John", "Julie", "Jennifer", "Helen", "Rachel").forEach(name -> {
-				User user = new User(name, name.toLowerCase() + "@domain.com");
+			Stream.of("Walle", "RealPerson", "Her").forEach(name -> {
+				User user = new User(name, name.toLowerCase() + "@domain.com", name);
 				userRepository.save(user);
 			});
 			userRepository.findAll().forEach(user -> System.out.println(user));

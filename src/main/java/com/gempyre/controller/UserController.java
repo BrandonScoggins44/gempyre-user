@@ -26,7 +26,7 @@ public class UserController {
 		return (List<User>) userRepository.findAll();
 	}
 
-	@PostMapping("/adduser")
+	@PostMapping("/users")
 	void addUser(@RequestBody User user) {
 		userRepository.save(user);
 	}
@@ -35,12 +35,6 @@ public class UserController {
 	@ResponseBody
 	String home() {
 		return "Hello World!";
-	}
-
-	@RequestMapping("/love")
-	@ResponseBody
-	String love() {
-		return "I love you babe <3";
 	}
 
 }
