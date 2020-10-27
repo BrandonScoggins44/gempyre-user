@@ -15,7 +15,7 @@ import com.gempyre.model.User;
 import com.gempyre.repository.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 public class UserController {
 
 	@Autowired
